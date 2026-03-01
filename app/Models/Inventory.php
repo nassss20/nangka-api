@@ -10,6 +10,7 @@ class Inventory extends Model
     protected $fillable = [
         'date',
         'kg',
+        'purchase_kg',
         'total_packs',
         'display_packs',
         'rejected_amount',
