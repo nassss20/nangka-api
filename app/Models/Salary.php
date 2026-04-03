@@ -1,0 +1,10 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Salary extends Model {
+    protected $fillable = ['date', 'employee_id', 'amount'];
+    public function employee() { return $this->belongsTo(Employee::class); }
+}
